@@ -9,7 +9,9 @@ const imageUrl: string =
 function App() {
   return (
     <>
-      <h1>Art&Antiques Frontend</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '100px' }}>
+        Art&Antiques Frontend
+      </h1>
 
       <img
         src={imageUrl}
@@ -18,6 +20,8 @@ function App() {
         style={{
           borderRadius: ' 60% 40% 30% 70% / 60% 30% 70% 40%',
           border: '14px solid #020202',
+          display: 'block',
+          margin: '0 auto',
         }}
       />
     </>

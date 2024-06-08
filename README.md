@@ -1,41 +1,35 @@
-# Art&Antiques
+Art&Antiques
+Description
+Art&Antiques is a web application designed for art and antique enthusiasts and collectors. It provides the ability to search for, view, and purchase various works of art, antique items, and collectible exhibits.
 
-## Описание
+Technologies
+The project is developed using the Vite build tool and the TypeScript programming language to ensure efficient and type-safe development.
 
-Art&Antiques - это веб-приложение, предназначенное для любителей и коллекционеров искусства и антиквариата. Оно предоставляет возможность искать, просматривать и приобретать различные произведения искусства, антиквариатные предметы и коллекционные экспонаты.
+Key Technologies:
+Vite: Vite is a modern build tool for web applications that ensures fast and efficient development by natively using ESM (ECMAScript Module) in browsers.
+TypeScript: TypeScript is a programming language that is a strongly typed extension of JavaScript, allowing errors to be detected and corrected during development.
 
-## Технологии
+## Installation and Launch
 
-Проект разработан с использованием сборщика Vite и языка программирования TypeScript для обеспечения эффективной и типобезопасной разработки.
-
-### Основные технологии:
-
-- **Vite**: Vite - это современный сборщик для веб-приложений, который обеспечивает быструю и эффективную разработку благодаря использованию ESM (ECMAScript Module) нативно в браузерах.
-- **TypeScript**: TypeScript - это язык программирования, представляющий собой строго типизированное расширение JavaScript, что позволяет обнаруживать и исправлять ошибки на этапе разработки.
-- **Redux Toolkit**: Redux Toolkit - это официальный набор инструментов для упрощения разработки Redux приложений. Он предоставляет удобные утилиты для управления состоянием приложения, такие как создание срезов (slices), использование функций createSlice и createAsyncThunk.
-- **Axios**: Axios - это библиотека для выполнения HTTP-запросов из JavaScript-приложений. Она предоставляет удобный интерфейс для работы с сетевыми запросами, включая поддержку промисов и автоматическое преобразование данных в форматах JSON.
-
-## Установка и запуск
-
-1. Установите зависимости, запустив следующую команду в корневой директории проекта:
+1. Install dependencies by running the following command in the project's root directory:
 
    npm install
 
-2. Запустите приложение в режиме разработки с помощью команды:
+2. Start the application in development mode with the command:
 
    npm run dev
 
-Это запустит сервер разработки с функцией горячей перезагрузки (hot reload), позволяя вам мгновенно видеть изменения в коде при их сохранении.
+This will start the development server with hot reload functionality, allowing you to instantly see changes in the code upon saving.
 
-3. Для сборки приложения в production режиме, выполните следующую команду:
+3. To build the application in production mode, run the following command:
 
 npm run build
 
-4. Чтобы просмотреть собранное приложение локально перед развертыванием, запустите:
+4. To view the built application locally before deployment, run:
 
 npm run preview
 
-5. Для проверки стиля кода и исправления потенциальных проблем выполните команду:
+5. To check the code style and fix potential issues, run the command:
 
 npm run lint
 
