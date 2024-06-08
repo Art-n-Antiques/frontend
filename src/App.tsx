@@ -1,7 +1,5 @@
-// Імпорт стилів нормалізації
+// Import normalization styles
 import 'modern-normalize';
-
-import './App.css';
 
 const imageUrl: string =
   'https://cdn.pixabay.com/photo/2014/07/10/11/19/tuba-388989_960_720.jpg';
