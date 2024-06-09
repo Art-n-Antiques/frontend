@@ -1,11 +1,15 @@
-Art&Antiques
-Description
+# Art&Antiques
+
+## Description
+
 Art&Antiques is a web application designed for art and antique enthusiasts and collectors. It provides the ability to search for, view, and purchase various works of art, antique items, and collectible exhibits.
 
-Technologies
+## Technologies
+
 The project is developed using the Vite build tool and the TypeScript programming language to ensure efficient and type-safe development.
 
-Key Technologies:
+### Key Technologies:
+
 Vite: Vite is a modern build tool for web applications that ensures fast and efficient development by natively using ESM (ECMAScript Module) in browsers.
 TypeScript: TypeScript is a programming language that is a strongly typed extension of JavaScript, allowing errors to be detected and corrected during development.
 
@@ -32,5 +36,3 @@ npm run preview
 5. To check the code style and fix potential issues, run the command:
 
 npm run lint
-
-later...
