@@ -1,5 +1,12 @@
-const RegisterPage = () => {
-  return <div>here will be the register page</div>;
+import RegisterForm from '../components/RegisterForm/RegisterForm';
+import AuthWrapper from '../components/AuthWrapper/AuthWrapper';
+
+const RegisterPage: React.FC = () => {
+  return (
+    <AuthWrapper>
+      <RegisterForm />
+    </AuthWrapper>
+  );
 };
 
 export default RegisterPage;

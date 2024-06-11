@@ -1,6 +1,7 @@
 import Layout from './components/Layout/Layout';
 import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import './index.css';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
@@ -9,8 +10,8 @@ const CartPage = lazy(() => import('./pages/CartPage'));
 
 function App() {
   return (
-    <Layout>
-      <Suspense fallback={null}>
+    <Suspense fallback={null}>
+      <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
@@ -18,8 +19,8 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="*" element={<Navigate to={'/'} replace />} />
         </Routes>
-      </Suspense>
-    </Layout>
+      </Layout>
+    </Suspense>
   );
 }
 

@@ -1,4 +1,8 @@
 /* reset.css */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5;
