@@ -1,4 +1,5 @@
-import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
+import { Form, Formik, FormikHelpers } from 'formik';
+import FormLabel from "../Common/FormLabel";
 import css from './AuthForm.module.css';
 import { registerSchema } from '../../services/schemas';
 import { FcGoogle } from 'react-icons/fc';
@@ -34,66 +35,10 @@ const RegisterForm: React.FC = () => {
         onSubmit={handleSubmit}
       >
         <Form className={css.form}>
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="name"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="text"
-              name="phone"
-              placeholder="Enter your phone number"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="phone"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="email"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="password"
-              name="password"
-              placeholder="Enter password"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="password"
-              component="span"
-            />
-          </label>
-
+          <FormLabel type="text" name="name" placeholder="Enter your name" autoComplete={false}/>
+          <FormLabel type="text" name="phone" placeholder="Enter your phone number" autoComplete={false}/>
+          <FormLabel type="email" name="email" placeholder="Enter your email" autoComplete={false}/>
+          <FormLabel type="password" name="password" placeholder="Enter your password" autoComplete={false}/>
           <button type="submit">
             <span>Register</span>
           </button>
