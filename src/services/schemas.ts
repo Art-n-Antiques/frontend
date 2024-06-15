@@ -19,7 +19,7 @@ export const registerSchema = Yup.object().shape({
     .min(3, 'Register name must be at least 3 characters!')
     .max(50, 'Register name must be less than 50 characters!')
     .required('Register name is required!'),
-  tel: Yup.string()
+  phone: Yup.string()
     .min(5, 'Phone number must be at least 5 characters!')
     .max(20, 'Phone number must be less than 20 characters!')
     .required('Phone number is required!')

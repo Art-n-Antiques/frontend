@@ -6,14 +6,14 @@ import { FcGoogle } from 'react-icons/fc';
 const RegisterForm: React.FC = () => {
   type FormData = {
     name: string;
-    tel: string;
+    phone: string;
     email: string;
     password: string;
   };
 
   const INITIAL_FORM_DATA: FormData = {
     name: '',
-    tel: '',
+    phone: '',
     email: '',
     password: '',
   };
@@ -53,13 +53,13 @@ const RegisterForm: React.FC = () => {
             <Field
               className={css.input}
               type="text"
-              name="tel"
+              name="phone"
               placeholder="Enter your phone number"
               autoComplete="off"
             />
             <ErrorMessage
               className={css.errorMsg}
-              name="tel"
+              name="phone"
               component="span"
             />
           </label>
