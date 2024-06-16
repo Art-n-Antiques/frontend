@@ -1,8 +1,8 @@
 import { Form, Formik, FormikHelpers } from 'formik';
+import FormLabel from '../Common/FormLabel';
 import css from '../RegisterForm/AuthForm.module.css';
 import { FcGoogle } from 'react-icons/fc';
 import { loginSchema } from '../../services/schemas';
-import FormLabel from '../FormLabel/FormLabel';
 
 const LoginForm: React.FC = () => {
   type FormData = {
@@ -32,16 +32,17 @@ const LoginForm: React.FC = () => {
       >
         <Form className={css.form}>
           <FormLabel
-            fieldType="email"
+            type="email"
             name="email"
-            fieldPlaceholder="Enter your email"
+            placeholder="Enter your email"
+            autoComplete={true}
           />
           <FormLabel
-            fieldType="password"
+            type="password"
             name="password"
-            fieldPlaceholder="Enter your password"
+            placeholder="Enter password"
+            autoComplete={false}
           />
-
           <button type="submit">
             <span>Sign in</span>
           </button>

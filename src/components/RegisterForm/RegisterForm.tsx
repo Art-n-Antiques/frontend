@@ -36,26 +36,29 @@ const RegisterForm: React.FC = () => {
       >
         <Form className={css.form}>
           <FormLabel
-            fieldType="text"
+            type="text"
             name="name"
-            fieldPlaceholder="Enter your name"
+            placeholder="Enter your name"
+            autoComplete={false}
           />
           <FormLabel
-            fieldType="text"
+            type="text"
             name="phone"
-            fieldPlaceholder="Enter your phone number"
+            placeholder="Enter your phone number"
+            autoComplete={false}
           />
           <FormLabel
-            fieldType="email"
+            type="email"
             name="email"
-            fieldPlaceholder="Enter your email"
+            placeholder="Enter your email"
+            autoComplete={false}
           />
           <FormLabel
-            fieldType="password"
+            type="password"
             name="password"
-            fieldPlaceholder="Enter password"
+            placeholder="Enter your password"
+            autoComplete={false}
           />
-
           <button type="submit">
             <span>Register</span>
           </button>
