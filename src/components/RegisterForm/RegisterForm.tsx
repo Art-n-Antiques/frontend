@@ -2,7 +2,7 @@ import { Form, Formik, FormikHelpers } from 'formik';
 import css from './AuthForm.module.css';
 import { registerSchema } from '../../services/schemas';
 import { FcGoogle } from 'react-icons/fc';
-import FormLabel from '../FormLabel/FormLabel';
+import FormLabel from '../Common/FormLabel';
 
 const RegisterForm: React.FC = () => {
   type FormData = {
