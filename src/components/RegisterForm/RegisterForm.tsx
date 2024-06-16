@@ -1,7 +1,8 @@
-import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
+import { Form, Formik, FormikHelpers } from 'formik';
 import css from './AuthForm.module.css';
 import { registerSchema } from '../../services/schemas';
 import { FcGoogle } from 'react-icons/fc';
+import FormLabel from '../FormLabel/FormLabel';
 
 const RegisterForm: React.FC = () => {
   type FormData = {
@@ -34,65 +35,26 @@ const RegisterForm: React.FC = () => {
         onSubmit={handleSubmit}
       >
         <Form className={css.form}>
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="name"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="text"
-              name="phone"
-              placeholder="Enter your phone number"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="phone"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="email"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="password"
-              name="password"
-              placeholder="Enter password"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="password"
-              component="span"
-            />
-          </label>
+          <FormLabel
+            fieldType="text"
+            name="name"
+            fieldPlaceholder="Enter your name"
+          />
+          <FormLabel
+            fieldType="text"
+            name="phone"
+            fieldPlaceholder="Enter your phone number"
+          />
+          <FormLabel
+            fieldType="email"
+            name="email"
+            fieldPlaceholder="Enter your email"
+          />
+          <FormLabel
+            fieldType="password"
+            name="password"
+            fieldPlaceholder="Enter password"
+          />
 
           <button type="submit">
             <span>Register</span>

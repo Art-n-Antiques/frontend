@@ -1,7 +1,8 @@
-import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
+import { Form, Formik, FormikHelpers } from 'formik';
 import css from '../RegisterForm/AuthForm.module.css';
 import { FcGoogle } from 'react-icons/fc';
 import { loginSchema } from '../../services/schemas';
+import FormLabel from '../FormLabel/FormLabel';
 
 const LoginForm: React.FC = () => {
   type FormData = {
@@ -30,35 +31,16 @@ const LoginForm: React.FC = () => {
         onSubmit={handleSubmit}
       >
         <Form className={css.form}>
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="email"
-              component="span"
-            />
-          </label>
-
-          <label className={css.label}>
-            <Field
-              className={css.input}
-              type="password"
-              name="password"
-              placeholder="Enter password"
-              autoComplete="off"
-            />
-            <ErrorMessage
-              className={css.errorMsg}
-              name="password"
-              component="span"
-            />
-          </label>
+          <FormLabel
+            fieldType="email"
+            name="email"
+            fieldPlaceholder="Enter your email"
+          />
+          <FormLabel
+            fieldType="password"
+            name="password"
+            fieldPlaceholder="Enter your password"
+          />
 
           <button type="submit">
             <span>Sign in</span>
